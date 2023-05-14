@@ -445,8 +445,7 @@
           </li>
           <li>
             function setUserName() { const myName = prompt("Please enter your
-            name."); localStorage.setItem("name", myName); myHeading.textContent
-            = `Mozilla is cool, ${myName}`; }
+            name."); localStorage.setItem("name", myName); }
           </li>
           <li>
             The 'setUserName()'' function contains a prompt() function, which
@@ -468,8 +467,7 @@
           <li>Then we add the following conditional block:</li>
           <li>
             if (!localStorage.getItem("name")) { setUserName(); } else { const
-            storedName = localStorage.getItem("name"); myHeading.textContent =
-            `Mozilla is cool, ${storedName}`; }
+            storedName = localStorage.getItem("name"); }
           </li>
           <li>
             The first line checks whether the name data exists already. If not,
@@ -485,9 +483,9 @@
     </main>
 
     <footer>
-      <p>I'm learning to code!</p>
+      <button id="UserNameButton">Change User</button>
     </footer>
-    <button>Change User</button>
+
     <script src="assets/scripts-main.js"></script>
   </body>
 </html>
