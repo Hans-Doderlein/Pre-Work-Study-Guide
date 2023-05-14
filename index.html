@@ -13,8 +13,10 @@
       <h1>Prework Study Guide</h1>
       <img
         src="./assets/coding image.jfif"
-        alt="Profile image of cat wearing a bow tie."
+        alt="Profile image black/red code"
       />
+      <br />
+      <h1>!Open the Console to See What's Happening!</h1>
     </header>
     <main>
       <section class="card" id="HTML-section">
@@ -127,6 +129,9 @@
           </li>
           <li>
             The 'id' attribute is a way to identify elements and select them
+          </li>
+          <li>
+            The format 'button'(button name)'/button' adds a button to the page
           </li>
         </ul>
       </section>
@@ -251,7 +256,230 @@
       <section class="card" id="JavaScript - section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter JavaScript notes here</li>
+          <li>
+            JavaScript (JS) is a high-level dynamic programming language that
+            allows users to interact with websites
+          </li>
+          <li>
+            Every time you do something with a webpage, such as click a button,
+            retrieve data, or fill out a form, JavaScript is at work
+          </li>
+          <li>
+            The 'script' elements adds JavaScript elements from an outside file
+            to your webpage
+          </li>
+          <li>
+            'null' is a JavaScript special value that refers to the absence of a
+            value
+          </li>
+          <li>The 'script' element goes at the bottom of the 'body' section</li>
+          <li>
+            JavaScript reads code from the top to bottom. This menas that we
+            must define everything before we try to use it
+          </li>
+        </ul>
+        <br />
+        <br />
+        <h3>Variables</h3>
+        <ul>
+          <li>
+            The function 'querySelector' grabs a reference to our text and
+            stores it in a variable
+          </li>
+          <li>
+            The 'textContent' property sets the value of the selected variable
+          </li>
+          <li>Variables are containers that store values</li>
+          <li>The 'let' command allows us to declare a variable</li>
+          <li>
+            JavaScript is case sensitive. The varaible 'heading' is not the same
+            as 'Heading'
+          </li>
+          <li>let (variable name) = ("variable value")</li>
+          <li>Retrieve the value by calling the variable name. Ex. heading;</li>
+          <li>
+            You can change the value of a variable after the inital declaration
+          </li>
+          <li>
+            A 'string' variable is a sequence of text inclosed in '' or ""
+          </li>
+          <li>Number variable do not need to be enclosed in quotes</li>
+          <li>
+            Boolean varaibles have values of true or false, they do not need
+            quotes
+          </li>
+          <li>
+            An array is a structure that allows us to store multiple values in a
+            single refernce, surrounded by []. Each value can be recalled by
+            identifying its place
+          </li>
+          <li>
+            Object variables can be anything. Everything in JavaScript is an
+            object
+          </li>
+          <li>
+            Variables are ways for users to personalize values by interacting
+            with the website
+          </li>
+        </ul>
+        <br />
+        <br />
+        <h3>Comments</h3>
+        <ul>
+          <li>
+            Comments are snippets of text that are ignored by the browser.
+            Denoted by /*code*/
+          </li>
+          <li>If there are no line breaks you can put comments behind //</li>
+        </ul>
+        <h3>Operators</h3>
+        <ul>
+          <li>
+            Operators are mathematical operations that prodice a result based on
+            two or more values/variables
+          </li>
+          <li>+,-,/,*, and = work just as expected</li>
+          <li>
+            '===' [reforms a test to see if two values are equal. Returns a
+            boolean result
+          </li>
+          <li>
+            '!' returns the logically opposite value of what it precedes. For
+            ex. it turns true into false
+          </li>
+        </ul>
+        <br />
+        <br />
+        <h3>Conditionals</h3>
+        <ul>
+          <li>
+            Conditionals are code structures used to test if an expressions
+            returns true or not
+          </li>
+          <li>The expression inside the if() is the test</li>
+          <li>
+            If the expression returns true, then the first line of code would
+            run.
+          </li>
+          <li>
+            If the expressions returns as false, the second block of code, after
+            the 'else' statement would run.
+          </li>
+          <li>
+            We can use the 'else if" condition to check for more than one
+            conditions in the same step
+          </li>
+        </ul>
+        <br />
+        <br />
+        <h3>Functions</h3>
+        <ul>
+          <li>Fucntions are a way of packaging functionality to reuse</li>
+          <li>
+            We can define a body of code as a function to recall instead of
+            repeatedly writing the code
+          </li>
+          <li>Functions are typically followed by paranthesis ()</li>
+          <li>
+            An argument is a bit of data that functions need to do their job
+          </li>
+          <li>Arguments go inside the parenthesis</li>
+          <li>
+            The 'alert' functions creates a pop-up box appear inside the window.
+            which returns the message as the argument
+          </li>
+          <li>
+            The return variable tells the browser to return the result variable
+          </li>
+        </ul>
+        <br />
+        <br />
+        <h3>Events</h3>
+        <ul>
+          <li>Real interactivity requires even handlers</li>
+          <li>
+            Event handlers look for activity in the browser and runs code in
+            response
+          </li>
+          <li>
+            Click event, respond when a user clicks on something with their
+            mouse
+          </li>
+          <li>
+            document.querySelector("html").addEventListener("click", function ()
+            { alert("Ouch! Stop poking me!"); });
+          </li>
+          <li>
+            In this exampmle, we select the 'html' element. we call the
+            addEventListener() function, passing in 'click' as the event to
+            watch out for
+          </li>
+          <li>
+            We added an anonymous function to this event. Alternatively we can
+            add '() =>' instead of function
+          </li>
+        </ul>
+        <h3>Changing Images</h3>
+        <ul>
+          <li>
+            const myImage = document.querySelector("img"); myImage.onclick = ()
+            => { const mySrc = myImage.getAttribute("src"); if (mySrc ===
+            "original image") { myImage.setAttribute("src", "new image"); } else
+            { myImage.setAttribute("src", "orignal image"); } };
+          </li>
+          <li>
+            In the code above, we stored a reference to our 'img' element. By
+            using a function with no name, we made it so every time we click the
+            image, the code retrieves the value of the img. The conditional
+            checks to see if the image is equal to the original path, if it is
+            then the code changes the path to our new image, if it is not then
+            it returns the original image.
+          </li>
+        </ul>
+        <h3>Personalized Messages</h3>
+        <ul>
+          <li>
+            Adding a personalized welcome message involves storing user info in
+            the Web Storage API, creatinng a change user button, and adding a
+            way for the user to name themselves
+          </li>
+          <li>
+            function setUserName() { const myName = prompt("Please enter your
+            name."); localStorage.setItem("name", myName); myHeading.textContent
+            = `Mozilla is cool, ${myName}`; }
+          </li>
+          <li>
+            The 'setUserName()'' function contains a prompt() function, which
+            displays a dialog box
+          </li>
+          <li>
+            The 'prompt' function asks the user to enter data, wich is stored as
+            a variable after the user clicks OK
+          </li>
+          <li>
+            'localStorage' allows users to store data in the browser for later
+            retrieval
+          </li>
+          <li>
+            The 'setItem()" function creates and stores a data item called
+            'name' which containers the 'myName' variable, which contains the
+            suers entry for the name
+          </li>
+          <li>Then we add the following conditional block:</li>
+          <li>
+            if (!localStorage.getItem("name")) { setUserName(); } else { const
+            storedName = localStorage.getItem("name"); myHeading.textContent =
+            `Mozilla is cool, ${storedName}`; }
+          </li>
+          <li>
+            The first line checks whether the name data exists already. If not,
+            the 'setUserName' function runs
+          </li>
+          <li>
+            If the name exists, we reitreve the stored name using 'getItem()'
+            and setting the textContent of the heading to a string and the
+            user's name
+          </li>
         </ul>
       </section>
     </main>
@@ -259,5 +487,7 @@
     <footer>
       <p>I'm learning to code!</p>
     </footer>
+    <button>Change User</button>
+    <script src="assets/scripts-main.js"></script>
   </body>
 </html>
