@@ -25,7 +25,7 @@ let myButton = document.querySelector("button");
 let myHeading = document.querySelector("h1");
 
 function setHeaderMessage(newTitle) {
-  myHeading.textContent = `Study Guide made by: ${newTitle}`;
+  myHeading.textContent = `Study Guide made by Nicholas, for use by ${newTitle}`;
 }
 
 function setUserName() {
