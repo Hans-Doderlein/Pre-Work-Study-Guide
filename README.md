@@ -1,4 +1,4 @@
-# <Pre-work Study Guide>
+# Pre-Work Study Guide
 
 ## Description
 
